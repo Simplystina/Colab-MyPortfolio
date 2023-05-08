@@ -29,7 +29,7 @@ const ContactPage = () => {
               
               <Box >
                     <Text textAlign="center" fontSize={[20, 25, 30]} fontWeight="500" >Get in Touch</Text>
-                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px" fontFamily="FreeMono, monospace" fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let's make that a reality.
+                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px" fontFamily="FreeMono, monospace" fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let`&aposs make that a reality.
                        My inbox is always open for a quick chat, feel free to stop by.
                     </Text>
                     <a href="https://wa.me/+2348109549798"><HStack data-aos="flip-right" data-aos-duration="2000" mt="60px" mb="40px" justify="center"><BsWhatsapp fontSize={25} color="#10c6bb"/><Text  fontFamily="FreeMono, monospace">08109549798</Text></HStack></a>
@@ -66,11 +66,11 @@ const ContactPage = () => {
             <Text color="#5a60ea" ml="10px">Contact</Text>
           </Flex>
            <VStack w="100%" align="end">
-                 <Text fontSize={["17px","20px","30px"]}><Link href="/">Home</Link></Text>
-                <Text  fontSize={["17px","20px","30px"]}><Link href="/about">About</Link></Text>
+                 <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link href="/">Home</Link></Text>
+                <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link href="/about">About</Link></Text>
                
-                <Text fontSize={["17px","20px","30px"]}><Link href="/portfolio">Portfolio Works</Link></Text>
-                <Text onClick={close} fontSize={["17px","20px","30px"]}><Link href="/contact">Contact</Link></Text>
+                <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link href="/portfolio">Portfolio Works</Link></Text>
+                <Text className={styles.link} onClick={close} fontSize={["17px","20px","30px"]}><Link href="/contact">Contact</Link></Text>
            </VStack>
            
         

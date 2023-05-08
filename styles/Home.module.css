@@ -110,7 +110,11 @@
   
 }
 
-
+.link:hover{
+  text-decoration: underline;
+  color: pink;
+  transition: all .2s linear;
+}
 
 .button .icon {
   margin-left: 10px;

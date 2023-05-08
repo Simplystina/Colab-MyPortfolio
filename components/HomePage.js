@@ -53,11 +53,11 @@ const HomePage = () => {
         <Box className={toggle ?  styles.page2show: styles.page2} p="50px 30px 10px 30px" >
            <Box onClick={close} fontWeight="800" fontSize="20px"><AiOutlineClose/></Box>
            <VStack w="100%" align="end">
-             <Text onClick={close} fontSize={["17px","20px","30px"]}><Link href="/">Home</Link></Text>
-                <Text fontSize={["17px","20px","30px"]}><Link href="/about">About</Link></Text>
+             <Text className={styles.link} onClick={close} fontSize={["17px","20px","30px"]}><Link href="/">Home</Link></Text>
+                <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link href="/about">About</Link></Text>
                 
-                <Text fontSize={["17px","20px","30px"]}><Link href="/portfolio">Portfolio Works</Link></Text>
-                <Text fontSize={["17px","20px","30px"]}><Link href="/contact">Contact</Link></Text>
+                <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link  href="/portfolio">Portfolio Works</Link></Text>
+                <Text className={styles.link} fontSize={["17px","20px","30px"]}><Link href="/contact">Contact</Link></Text>
            </VStack>
            
         
