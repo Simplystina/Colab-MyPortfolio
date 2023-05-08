@@ -39,8 +39,8 @@ const PortfolioPage = ({repositories}) => {
               <Box mt="60px">
                   <Accordion allowToggle="true">
                     {
-                      repositories.map((item )=>(
-                        <ProjectAccordion repo={item}/>
+                      repositories.map((item, index )=>(
+                        <ProjectAccordion key={index} repo={item}/>
                       ))
                     }
                   </Accordion>

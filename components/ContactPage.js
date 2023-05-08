@@ -29,7 +29,7 @@ const ContactPage = () => {
               
               <Box >
                     <Text textAlign="center" fontSize={[20, 25, 30]} fontWeight="500" >Get in Touch</Text>
-                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px" fontFamily="FreeMono, monospace" fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let`&aposs make that a reality.
+                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px" fontFamily="FreeMono, monospace" fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let`s make that a reality.
                        My inbox is always open for a quick chat, feel free to stop by.
                     </Text>
                     <a href="https://wa.me/+2348109549798"><HStack data-aos="flip-right" data-aos-duration="2000" mt="60px" mb="40px" justify="center"><BsWhatsapp fontSize={25} color="#10c6bb"/><Text  fontFamily="FreeMono, monospace">08109549798</Text></HStack></a>
