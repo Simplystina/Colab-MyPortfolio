@@ -49,7 +49,7 @@ const ProjectAccordion = ({repo}) => {
                       </HStack>
                     </a>
 
-                    <a rel="noreferrer" href={repo.url} target="_blank">
+                    <a rel="noreferrer" href={repo.html_url} target="_blank">
                       <HStack color="#5a60ea" transition="all 0.8s linear" _hover={{paddingRight: "20px"}} align="center"><Text fontSize={[10,12, 16]}>Code</Text><BsGithub/>
                       </HStack>
                     </a>
