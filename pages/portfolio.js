@@ -1,11 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import { Box } from '@chakra-ui/react'
-import AboutPage from '../components/AboutPage'
 import Project from '../components/PortfolioPage'
-import { getRepositories } from '../utils/services'
 
-const portfolio = ({repositories}) => {
+
+const portfolio = () => {
 
    
   return (
@@ -18,21 +17,13 @@ const portfolio = ({repositories}) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>
-        <Project repositories={repositories}></Project>
+        <Project ></Project>
       </Box>
 
     </div>
   )
 }
 
-export async function getServerSideProps() {
-    const repositories = await getRepositories();
 
-    return {
-      props: {
-        repositories
-      },
-    };
-  }
 
 export default portfolio

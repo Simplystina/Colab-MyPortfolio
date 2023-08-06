@@ -1,20 +1,19 @@
 import React,{useState} from 'react'
 import { Flex, Text } from '@chakra-ui/react'
-import { Box, Img, VStack , HStack, Center, Button, Accordion} from '@chakra-ui/react'
+import { Box,VStack , HStack, Accordion} from '@chakra-ui/react'
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
 import styles from '../styles/Home.module.css' 
-import {BsTwitter, BsGithub, BsLinkedin, BsWhatsapp} from "react-icons/bs"
-import {MdLocationOn} from "react-icons/md"
+import {BsTwitter, BsGithub, BsLinkedin} from "react-icons/bs"
 import Link from 'next/link'
 import Typingtext from './Typingtext'
 import ProjectAccordion from './ProjectAccordion'
-import { getRepositories } from '../utils/services'
+import { projects } from '../utils/data'
 
-const PortfolioPage = ({repositories}) => {
+const PortfolioPage = () => {
 
   
   
-  console.log(repositories, "repos")
+  
     const [toggle, setToggle] = useState(false)
 
     const open = ()=>{
@@ -35,12 +34,12 @@ const PortfolioPage = ({repositories}) => {
             <Box onClick={open} fontSize="20px"><AiOutlineMenu/></Box> 
             <Text color="#5a60ea" ml="10px">Portfolio</Text>
           </Flex>
-          <Text m="20px auto" w="90%" fontSize={["12px","16px"]}>I added this section to display projects that I've actively collaborated in and built. They're my top best projects and the github API was used to pull the informations</Text>
+          <Text m="20px auto" w="90%" fontSize={["12px","16px"]}>I added this section to display projects that I've actively collaborated in and built. They're my top best personal projects and they have really helped to solidify my skills</Text>
               <Box mt="60px">
                   <Accordion allowToggle="true">
                     {
-                      repositories.map((item, index )=>(
-                        <ProjectAccordion key={index} repo={item}/>
+                      projects.map((item, index )=>(
+                        <ProjectAccordion key={index} project={item}/>
                       ))
                     }
                   </Accordion>

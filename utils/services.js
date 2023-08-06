@@ -1,4 +1,5 @@
 const proj = [
+    "linkly",
     "Prembly-Hack-AmNiD-App",
     "KanBan-App-API",
     "CharCord-",

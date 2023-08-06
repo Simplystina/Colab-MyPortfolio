@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Flex, Text } from '@chakra-ui/react'
-import { Box, Img, VStack ,HStack, Stack, Center, Button} from '@chakra-ui/react'
-import {AiOutlineMenu, AiOutlineClose, AiOutlineArrowRight} from "react-icons/ai"
+import { Box,VStack ,HStack, Stack, Center, Button} from '@chakra-ui/react'
+import {AiOutlineMenu, AiOutlineArrowRight} from "react-icons/ai"
 import styles from '../styles/Home.module.css' 
 import {BsTwitter, BsGithub, BsLinkedin, BsWhatsapp} from "react-icons/bs"
 import {MdLocationOn} from "react-icons/md"
@@ -29,22 +29,22 @@ const ContactPage = () => {
               
               <Box >
                     <Text textAlign="center" fontSize={[20, 25, 30]} fontWeight="500" >Get in Touch</Text>
-                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px" fontFamily="FreeMono, monospace" fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let`s make that a reality.
+                    <Text data-aos="zoom-in" data-aos-duration="2000" textAlign="center" m="40px auto" maxW="700px"  fontSize={[14]}>Hi, thank you for stopping by. Do you have any project in mind? Come let`s make that a reality.
                        My inbox is always open for a quick chat, feel free to stop by.
                     </Text>
-                    <a href="https://wa.me/+2348109549798"><HStack data-aos="flip-right" data-aos-duration="2000" mt="60px" mb="40px" justify="center"><BsWhatsapp fontSize={25} color="#10c6bb"/><Text  fontFamily="FreeMono, monospace">08109549798</Text></HStack></a>
+                    <a href="https://wa.me/+2348109549798"><HStack data-aos="flip-right" data-aos-duration="2000" mt="10px" mb="20px" justify="center"><BsWhatsapp fontSize={25} color="#10c6bb"/><Text >08109549798</Text></HStack></a>
                     <HStack data-aos="flip-left" data-aos-duration="2000"  justify="center">
                         <MdLocationOn fontSize={[20, 25, 30]} color="rgb(234, 5, 234)"/>
-                        <Text fontFamily="FreeMono, monospace">Lagos, Nigeria</Text> 
+                        <Text >Lagos, Nigeria</Text> 
                     </HStack>
-                   <Stack m="10px" align="center" justifyContent="center">
-                        <Button className={styles.button} onClick={openMail}  borderRadius="40px"  w={["150px","200px","300px"]} h="50px" fontSize={[10, 12, 15]} bg="transparent"  border="1px solid #10c6bb" color="#10c6bb">
+                      <Stack direction={["column","row"]} mt="10px" align="center" justifyContent="center">
+                          <Button className={styles.button} onClick={openMail} borderRadius="40px" w={["150px", "200px", "300px"]} h="50px" fontSize={[10, 12, 15]} bg="transparent" border="1px solid #5a60ea" color="#5a60ea">
                             Get in Touch
                             <span className={styles.icon}><AiOutlineArrowRight/></span>
                         </Button>
                         <Box>
                            <a fontSize={[10, 12, 14,16]}  target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1jmVqg8PHvBeLvEqsg2Ct84dZCSHM1P15/view?usp=sharing">
-                            <Button className={styles.button}  borderRadius="40px"  w={["150px","200px","300px"]}  h="50px"  fontSize="15px" bg="transparent"  border="1px solid #10c6bb" color="#10c6bb">Resume
+                                  <Button className={styles.button} borderRadius="40px" w={["150px", "200px", "300px"]} h="50px" fontSize="15px" bg="transparent" border="1px solid #5a60ea" color="#5a60ea">Resume
                             <span className={styles.icon}><AiOutlineArrowRight/></span>
                             </Button>
                             </a>
